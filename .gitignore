@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+
+!*.kicad_pcb
+!*.kicad_pro
+!*.kicad_sch
+
+!exports/
+!exports/*
+
+!images/
+!images/*

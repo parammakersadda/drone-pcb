@@ -12,10 +12,10 @@ check "LICENSE" file for the license
 
 # images
 
-![3d rendering of the front view of the pcb](images/drone-pcb-front.png)
+![3d rendering of the front view of the pcb](images/drone-pcb-front-3dModel.png)
 
 schematic
 ![schematic view](images/drone-pcb.svg)
 
 pcb routing
-![pcb view](images/drone-pcb-board.svg)
+![pcb view](images/drone-pcb-F_Cu.svg)

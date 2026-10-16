@@ -13,4 +13,6 @@ check "LICENSE" file for the license
 
 ![3d rendering of the front view of the pcb](images/drone-pcb-front.png)
 
-![schematic view](images/drone-pcb-schematic.svg)
+![schematic view](images/drone-pcb.svg)
+
+![pcb view](images/drone-pcb-board.svg)

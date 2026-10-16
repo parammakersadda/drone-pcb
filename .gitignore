@@ -13,3 +13,10 @@
 
 !images/
 !images/*
+
+!PDFs/
+!PDFs/*
+!PDFs/schematics/
+!PDFs/schematics/*
+!PDFs/pcb/
+!PDFs/pcb/*

@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "6424a1a8-ac3c-40bd-aa54-81cdf86a6261")
 	(paper "A4")
+	(title_block
+		(title "drone-pcb")
+		(company "param foundation")
+		(comment 1 "designed in param makers adda")
+		(comment 2 "license: CERN-OHL-W V2.0")
+		(comment 3 "under development")
+	)
 	(lib_symbols
 		(symbol "Battery_Management:MCP73831-2-OT"
 			(exclude_from_sim no)
@@ -6132,7 +6139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 209.2452 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6289,7 +6296,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 265.43 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7150,7 +7157,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 105.41 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -7235,7 +7242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 20.0152 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -7401,7 +7408,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 54.61 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -7561,7 +7568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 72.39 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -7898,7 +7905,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 197.8152 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -8547,7 +8554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 218.1352 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10927,7 +10934,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 123.19 182.88 0)
 			(hide yes)
 			(show_name no)

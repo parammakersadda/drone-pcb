@@ -8,7 +8,8 @@
 !*.kicad_pro
 !*.kicad_sch
 
-!*.stl
+!3dModels/
+!3dModels/*
 
 !exports/
 !exports/*

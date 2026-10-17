@@ -14,8 +14,8 @@ check "LICENSE" file for the license
 
 ![3d rendering of the front view of the pcb](images/drone-pcb-front-3dModel.png)
 
-schematic
+[schematic](PDFs/drone-pcb-schematic.pdf)
 ![schematic view](images/drone-pcb.svg)
 
-pcb routing
+[pcb routing](PDFs/drone-pcb-board.pdf)
 ![pcb view](images/drone-pcb-F_Cu.svg)

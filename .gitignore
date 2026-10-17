@@ -4,6 +4,8 @@
 !LICENSE
 !README.md
 
+!makefile
+
 !*.kicad_pcb
 !*.kicad_pro
 !*.kicad_sch

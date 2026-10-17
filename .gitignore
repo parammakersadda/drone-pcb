@@ -8,6 +8,8 @@
 !*.kicad_pro
 !*.kicad_sch
 
+!*.stl
+
 !exports/
 !exports/*
 

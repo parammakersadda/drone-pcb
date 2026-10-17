@@ -12,7 +12,7 @@ check "LICENSE" file for the license
 
 # images
 
-[3d model](drone-pcb.stl)
+[3d model](3dModels/drone-pcb.stl)
 ![3d rendering of the front view of the pcb](images/drone-pcb-front-3dModel.png)
 
 [schematic](PDFs/drone-pcb-schematic.pdf)

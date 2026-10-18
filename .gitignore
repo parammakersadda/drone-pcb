@@ -14,7 +14,8 @@
 !3dModels/*
 
 !exports/
-!exports/*
+!exports/gerbers/
+!exports/gerbers/*
 
 !images/
 !images/*

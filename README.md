@@ -19,4 +19,4 @@ check "LICENSE" file for the license
 ![schematic view](images/drone-pcb.svg)
 
 [pcb routing](PDFs/drone-pcb-board.pdf)
-![pcb view](images/drone-pcb-F_Cu.svg)
+![pcb view](images/drone-pcb-routing.svg)

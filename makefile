@@ -9,8 +9,10 @@ kicadFiles=$(makeDir)/drone-pcb.kicad_pro $(schematicFile) $(pcbFile)
 all: $(makeDir)/exports/gerbers $(makeDir)/images/drone-pcb-front-3dModel.png $(makeDir)/PDFs/drone-pcb-board.pdf $(makeDir)/images/drone-pcb-routing.svg $(makeDir)/PDFs/drone-pcb-schematic.pdf $(makeDir)/images/drone-pcb.svg $(makeDir)/3dModels/drone-pcb.glb $(makeDir)/3dModels/drone-pcb.stl 
 
 #exports to manufacturing format (gerber)
+final_gerbers_zip=$(makeDir)/exports/drone-pcb-gerbers.zip
 $(makeDir)/exports/gerbers: $(pcbFile)
 	kicad-cli pcb export gerbers $^ -o $@ 
+	zip -r $(final_gerbers_zip) $@
 
 #3d model of pcb
 $(makeDir)/images/drone-pcb-front-3dModel.png: $(pcbFile)

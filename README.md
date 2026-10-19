@@ -14,7 +14,7 @@ check "LICENSE" file for the license
 There are 3d model files available in the 3dModels folder, in both stl and glb file formats.
 
 > Note:
-> "makefile" can be used by typing ```make``` in the project root directory, to automatically update the svg images, PDFs and 3d models as the kicad files change.  
+> "makefile" can be used by typing ```make``` in the project root directory, to automatically update the images, PDFs, 3d models and exports as the kicad files change.  
 > The makefile uses kicad-cli to generate the resources.
 
 [3d model](3dModels/drone-pcb.stl)

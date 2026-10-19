@@ -1,36 +1,37 @@
 #current directory of makefile
 makeDir := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+projectName= $(notdir $(makeDir))
+$(info project name: $(projectName))
 
-schematicFile=$(makeDir)/drone-pcb.kicad_sch
-pcbFile=$(makeDir)/drone-pcb.kicad_pcb
 
-kicadFiles=$(makeDir)/drone-pcb.kicad_pro $(schematicFile) $(pcbFile)
+schematicFile=$(wildcard $(makeDir)/*.kicad_sch)
+pcbFile=$(wildcard $(makeDir)/*.kicad_pcb)
 
-all: $(makeDir)/exports/gerbers $(makeDir)/images/drone-pcb-front-3dModel.png $(makeDir)/PDFs/drone-pcb-board.pdf $(makeDir)/images/drone-pcb-routing.svg $(makeDir)/PDFs/drone-pcb-schematic.pdf $(makeDir)/images/drone-pcb.svg $(makeDir)/3dModels/drone-pcb.glb $(makeDir)/3dModels/drone-pcb.stl 
+all: $(makeDir)/exports/gerbers $(makeDir)/images/$(projectName)-front-3dModel.png $(makeDir)/PDFs/$(projectName)-board.pdf $(makeDir)/images/$(projectName)-routing.svg $(makeDir)/PDFs/$(projectName)-schematic.pdf $(makeDir)/images/$(projectName).svg $(makeDir)/3dModels/$(projectName).glb $(makeDir)/3dModels/$(projectName).stl 
 
 #exports to manufacturing format (gerber)
-final_gerbers_zip=$(makeDir)/exports/drone-pcb-gerbers.zip
+final_gerbers_zip=$(makeDir)/exports/$(projectName)-gerbers.zip
 $(makeDir)/exports/gerbers: $(pcbFile)
 	kicad-cli pcb export gerbers $^ -o $@ 
 	zip -r $(final_gerbers_zip) $@
 
 #3d model of pcb
-$(makeDir)/images/drone-pcb-front-3dModel.png: $(pcbFile)
+$(makeDir)/images/$(projectName)-front-3dModel.png: $(pcbFile)
 	kicad-cli pcb render $^ -o $@
 
-$(makeDir)/3dModels/drone-pcb.glb: $(pcbFile)
+$(makeDir)/3dModels/$(projectName).glb: $(pcbFile)
 	kicad-cli pcb export glb $^ -o $@	
-$(makeDir)/3dModels/drone-pcb.stl: $(pcbFile)
+$(makeDir)/3dModels/$(projectName).stl: $(pcbFile)
 	kicad-cli pcb export stl $^ -o $@	
 
 #pcb copper trace routing
-$(makeDir)/PDFs/drone-pcb-board.pdf: $(pcbFile)
+$(makeDir)/PDFs/$(projectName)-board.pdf: $(pcbFile)
 	kicad-cli pcb export pdf --layers "*" $^ -o $@
-$(makeDir)/images/drone-pcb-routing.svg: $(pcbFile)
+$(makeDir)/images/$(projectName)-routing.svg: $(pcbFile)
 	kicad-cli pcb export svg -l "*" $^ -o $@
 
 #pcb schematics
-$(makeDir)/PDFs/drone-pcb-schematic.pdf: $(schematicFile)
+$(makeDir)/PDFs/$(projectName)-schematic.pdf: $(schematicFile)
 	kicad-cli sch export pdf $^ -o $@ 
-$(makeDir)/images/drone-pcb.svg: $(schematicFile)
+$(makeDir)/images/$(projectName).svg: $(schematicFile)
 	kicad-cli sch export svg $^ -o $(dir $@)

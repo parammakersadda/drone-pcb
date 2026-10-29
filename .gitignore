@@ -4,11 +4,10 @@
 !LICENSE
 !README.md
 
-!makefile
-
 !*.kicad_pcb
 !*.kicad_pro
 !*.kicad_sch
+!*.kicad_jobset
 
 !3dModels/
 !3dModels/*
@@ -23,8 +22,4 @@
 !images/*
 
 !PDFs/
-!PDFs/*
-!PDFs/schematics/
-!PDFs/schematics/*
-!PDFs/pcb/
-!PDFs/pcb/*
+!PDFs/*.pdf

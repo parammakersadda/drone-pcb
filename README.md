@@ -30,4 +30,4 @@ back
 ![schematic view](images/drone-pcb.svg)
 
 [Pcb routing (click on this link to see the PDF)](PDFs/drone-pcb-B_Cu.pdf)
-![pcb view](images/drone-pcb.svg)
+![pcb view](images/drone-pcb-B_Cu.svg)

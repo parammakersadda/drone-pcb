@@ -2,7 +2,7 @@
 
 (under early stage development)
 
-open source drone printed circuit board design with 6 coreless motors,  
+open source drone printed circuit board design with 4 coreless motors,  
 using [stm32f103c8](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html) microcontroller chip for processing data and motor control,  
 and [nrf24l01+](https://www.nordicsemi.com/Products/nRF24-series) 2.4Ghz radio transciever chip for wireless communication.
 
